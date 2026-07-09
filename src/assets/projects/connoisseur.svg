@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="'JetBrains Mono',monospace">
+  <rect width="640" height="400" fill="#0b1120"/>
+  <g fill="none" stroke="rgba(148,163,184,0.12)">
+    <path d="M0 100h640M0 200h640M0 300h640M160 0v400M320 0v400M480 0v400"/>
+  </g>
+  <!-- pipeline: ingest -> retrieve -> agents -> mcp -->
+  <g stroke="rgba(129,140,248,0.6)" stroke-width="2" fill="none">
+    <path d="M150 200h60"/>
+    <path d="M330 200h30l40 -60M360 200l40 -20M360 200l40 20M330 200h30l40 60"/>
+    <path d="M470 140l60 45M470 180l60 15M470 220l60 -15M470 260l60 -45"/>
+  </g>
+  <g font-size="15" text-anchor="middle">
+    <rect x="40" y="170" width="110" height="60" rx="12" fill="rgba(34,211,238,0.12)" stroke="#22d3ee"/>
+    <text x="95" y="196" fill="#22d3ee">ingest</text>
+    <text x="95" y="216" fill="#7dd3fc" font-size="11">LLM + vision</text>
+    <rect x="210" y="170" width="120" height="60" rx="12" fill="rgba(129,140,248,0.12)" stroke="#818cf8"/>
+    <text x="270" y="196" fill="#a5b4fc">retrieve</text>
+    <text x="270" y="216" fill="#c7d2fe" font-size="11">ChromaDB · CLIP</text>
+    <g fill="rgba(244,114,182,0.15)" stroke="#f472b6">
+      <circle cx="440" cy="130" r="22"/>
+      <circle cx="440" cy="177" r="22"/>
+      <circle cx="440" cy="224" r="22"/>
+      <circle cx="440" cy="271" r="22"/>
+    </g>
+    <g fill="#f9a8d4" font-size="12">
+      <text x="440" y="135">a1</text>
+      <text x="440" y="182">a2</text>
+      <text x="440" y="229">a3</text>
+      <text x="440" y="276">a4</text>
+    </g>
+    <rect x="530" y="170" width="90" height="60" rx="12" fill="rgba(52,211,153,0.12)" stroke="#34d399"/>
+    <text x="575" y="196" fill="#6ee7b7">MCP</text>
+    <text x="575" y="216" fill="#a7f3d0" font-size="11">server</text>
+  </g>
+  <text x="320" y="52" text-anchor="middle" fill="#e2e8f0" font-size="20" font-weight="600">six-agent ReAct workflow</text>
+  <text x="320" y="76" text-anchor="middle" fill="#94a3b8" font-size="13">multimodal RAG · parallel analysis · tool use</text>
+  <text x="320" y="360" text-anchor="middle" fill="#475569" font-size="12">$ python -m connoisseur.agents.workflow --parallel</text>
+</svg>
