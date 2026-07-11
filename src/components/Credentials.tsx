@@ -15,18 +15,24 @@ export function Credentials() {
           <h3 className="font-mono text-sm uppercase tracking-widest text-cyan">Education</h3>
           <div className="mt-4 grid flex-1 grid-rows-2 gap-5">
             {education.map((entry) => (
-              <div key={entry.degree} className="card flex items-center gap-5 p-5">
+              <a
+                key={entry.degree}
+                href={entry.url}
+                target="_blank"
+                rel="noreferrer"
+                className="card group flex items-center gap-5 p-5"
+              >
                 <img
                   src={entry.logo}
                   alt={`${entry.school} seal`}
-                  className="h-20 w-20 shrink-0 rounded-full object-cover"
+                  className="h-20 w-20 shrink-0 rounded-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div>
                   <p className="font-display text-lg font-semibold leading-snug text-bright">{entry.degree}</p>
                   <p className="mt-1.5 text-sm">{entry.school}</p>
                   <p className="mt-1 font-mono text-xs text-body/70">{entry.location}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

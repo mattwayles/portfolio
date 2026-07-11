@@ -15,12 +15,9 @@ export function About() {
           <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border border-cyan/40 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2" />
           <img
             src={travelImg}
-            alt="Matt at Machu Picchu, Peru"
+            alt="Matt hiking under Double Arch in Arches National Park, Utah"
             className="relative rounded-2xl border border-line object-cover saturate-[0.85] transition-all duration-300 group-hover:saturate-100"
           />
-          <figcaption className="relative mt-3 text-center font-mono text-xs text-body/80">
-            Machu Picchu, Peru — the travel bug is permanent.
-          </figcaption>
         </figure>
       </div>
     </Section>

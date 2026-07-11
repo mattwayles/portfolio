@@ -13,12 +13,14 @@ import remindByPiImg from './assets/projects/remindByPiImg.png'
 import buSeal from './assets/education/bu-seal.svg'
 import cofcSeal from './assets/education/cofc-seal.png'
 
-import ibmRagBadge from './assets/certs/ibm-rag-agentic.svg'
+import ibmRagBadge from './assets/certs/ibm-rag-agentic.png'
 import dlaiBadge from './assets/certs/dlai-genai.svg'
 import ocpBadge from './assets/certs/ocp.png'
 import mcpHtmlBadge from './assets/certs/mcp_html.png'
 import mcpWin2012Badge from './assets/certs/mcp_win2012.png'
 import mcpWin7Badge from './assets/certs/mcp_win7.png'
+import csisBadge from './assets/certs/comptia-csis.png'
+import ciosBadge from './assets/certs/comptia-cios.png'
 import secPlusBadge from './assets/certs/sec+.png'
 import netPlusBadge from './assets/certs/net+.png'
 import aPlusBadge from './assets/certs/a+.png'
@@ -54,7 +56,8 @@ export const about = {
     matching — and hold professional certifications in RAG, agentic AI, and generative AI for software
     development. Same obsession with clean architecture and delightful UX that got me hooked in the first place.`,
     `Away from the keyboard I'm in the Colorado Rockies: mountain biking and trail running in the summer,
-    snowboarding in the winter, and traveling whenever I can — Machu Picchu, pictured here, remains a favorite.`,
+    snowboarding in the winter, and chipping away at a personal quest to hike every U.S. national park —
+    Arches, pictured here, is the latest stamp.`,
   ],
 }
 
@@ -365,10 +368,10 @@ export type Certification = {
 // Active credentials — front and center.
 export const aiCertifications: Certification[] = [
   {
-    title: 'Retrieval-Augmented Generation & Agentic AI Professional',
-    issuer: 'IBM',
+    title: 'Build RAG Applications: Get Started',
+    issuer: 'IBM Developer Skills Network',
     detail:
-      'Professional certification covering RAG architectures, vector retrieval, and the design of autonomous, tool-using agentic AI systems.',
+      'Hands-on credential covering retrieval-augmented generation architecture, vector retrieval, and building RAG applications end to end.',
     badge: ibmRagBadge,
     url: 'https://www.coursera.org/account/accomplishments/specialization/DDEB1ZSMVG87',
   },
@@ -396,7 +399,7 @@ export const legacyCertifications: Certification[] = [
     issuer: 'Microsoft',
     detail: 'Exam 70-480: document manipulation, CSS3 styling, program flow, and secure data access.',
     badge: mcpHtmlBadge,
-    url: 'https://learn.microsoft.com/en-us/credentials/',
+    url: 'https://learn.microsoft.com/en-us/shows/ignite-2015/brk3918',
   },
   {
     title: 'MCP — Windows Server 2012',
@@ -411,6 +414,20 @@ export const legacyCertifications: Certification[] = [
     detail: 'Exam 70-680: enterprise deployment, configuration, and management of Windows clients.',
     badge: mcpWin7Badge,
     url: 'https://learn.microsoft.com/en-us/credentials/',
+  },
+  {
+    title: 'CompTIA Secure Infrastructure Specialist (CSIS)',
+    issuer: 'CompTIA',
+    detail: 'Stackable credential validating combined skills in network security, endpoint protection, and infrastructure hardening.',
+    badge: csisBadge,
+    url: 'https://www.comptia.org/certifications/stackable-certifications',
+  },
+  {
+    title: 'CompTIA IT Operations Specialist (CIOS)',
+    issuer: 'CompTIA',
+    detail: 'Stackable credential validating combined skills in device support, networking, and systems troubleshooting.',
+    badge: ciosBadge,
+    url: 'https://www.comptia.org/certifications/stackable-certifications',
   },
   {
     title: 'CompTIA Security+',
@@ -441,12 +458,14 @@ export const education = [
     school: 'Boston University',
     location: 'Boston, MA',
     logo: buSeal,
+    url: 'https://www.bu.edu/online/degrees-certificates/computer-science-it/ms-software-development/',
   },
   {
     degree: 'B.S. Computer Information Systems',
     school: 'College of Charleston',
     location: 'Charleston, SC · with honors',
     logo: cofcSeal,
+    url: 'https://charleston.edu/compsci/programs/undergraduate-programs/bs-information-systems.php',
   },
 ]
 
